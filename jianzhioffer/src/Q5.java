@@ -62,14 +62,14 @@ class Q5_test3{
         StringBuilder sb = new StringBuilder();
         for(int i=0;i<s.length();i++){
             if(s.charAt(i)==' '){
-                sb.append("%20");
+                sb.append("%20");              
             }else{
                 sb.append(s.charAt(i));
             }
         }
         long end = System.nanoTime();
         System.out.println(end-begin);
-        return s.toString();
+        return sb.toString();
         // time 31179
     }
 }
